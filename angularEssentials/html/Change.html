@@ -1,0 +1,17 @@
+﻿<!doctype html>
+<html ng-app>
+  <head>
+    <script src="http://code.angularjs.org/1.1.4/angular.min.js"></script>
+      <script src="../javascripts/ng-change.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div ng-controller="Controller">
+      <input type="checkbox" ng-model="confirmed" ng-change="change()" id="ng-change-example1" />
+      <input type="checkbox" ng-model="confirmed" id="ng-change-example2" />
+      <label for="ng-change-example2">Confirmed</label><br />
+      debug = {{confirmed}}<br />
+      counter = {{counter}}
+    </div>
+  </body>
+</html>

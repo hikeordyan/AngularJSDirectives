@@ -1,0 +1,13 @@
+﻿<!doctype html>
+<html ng-app>
+  <head>
+    <script src="http://code.angularjs.org/1.1.4/angular.min.js"></script>
+      <link href="../css/ClassStyle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <input type="button" value="set" ng-click="myVar='my-class'">
+    <input type="button" value="clear" ng-click="myVar=''">
+    <br>
+    <span ng-class="myVar">Sample Text</span>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+﻿<!doctype html>
+<html ng-app>
+  <head>
+    <script src="http://code.angularjs.org/1.1.4/angular.min.js"></script>
+      <link href="../css/ClasesEvenOdd.css" rel="stylesheet" />
+  </head>
+  <body>
+    <ol ng-init="names=['John', 'Mary', 'Cate', 'Suz']">
+      <li ng-repeat="name in names">
+       <span ng-class-odd="'odd'" ng-class-even="'even'">
+         {{name}} &nbsp; &nbsp; &nbsp;
+       </span>
+      </li>
+    </ol>
+  </body>
+</html>
